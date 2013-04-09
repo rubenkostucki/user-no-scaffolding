@@ -1,0 +1,16 @@
+<h1> Welcome to all Users </h1>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Super Power</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.super_power %></td>
+  </tr>
+<% end %>
+  </table>
